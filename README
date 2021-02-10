@@ -1,0 +1,37 @@
+# Instructions:
+
+Continue on the implemention of the API Service using OOP for the following problems, using the template provided.
+
+The request to the API Service looks like: `/localhost/pathtofolder/product.php?action=question1&param1=value1&param2=value2` and a json object result is returned.
+
+Stick to the structure provided in the template and write your solutions in `.../gigmedia-be-test/template/problems` directory, in the respective file. If you have a better solution to approach this API please let us know or provide us with an example.
+
+
+## Question 1.
+
+Write a program that takes `$min` and `$max` as input and displays the number of prime numbers that lie between `$min` and `$max` (`$min` and `$max` inclusive) and can be represented as sum of two consecutive prime numbers incremented by 1.
+
+#### Example 1: 
+  * For the input provided as follows: 1 20
+  * Output of the program will be: 2
+  * Explanation:
+    * 13 is a prime number which can be expressed like 5+7+1.
+    * 19 is a prime number which can be expressed like 7+11+1.
+    * So output is 2.
+  * Note that 5 and 7 are consecutive primes. Similarly 7 and 11 are consecutive primes.
+        
+#### Example 2:
+  * For the input provided as follows: 1 10
+  * Output of the program will be: 0
+  * Explanation
+    * No prime numbers lie between 1 and 10 that can be represented as sum of two consecutive prime numbers + 1, hence 0 is displayed.
+    
+## Question 2.
+
+Without any modification, use the Product class found in `../gigmedia-be-test/template/utilites/classes/product.php`. An instance of Question2 class should take a `$name` and a `$price` to output "This product is called a `name` and costs `price` USD."
+
+## Question 3.
+
+Call the weather webservice provided by [DarkSky](https://darksky.net/) to output the weather "summary" part of the returned data. The webservice program should be able to take `$longitude` and `$latitude` to provide weather information for a given geographic location.
+
+To get weather data you need to register a free account [here](https://darksky.net/dev/login) and use the API according to the information shown after. 
